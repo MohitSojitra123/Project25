@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+</style>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- jquery -->
+
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Remix Icon -->
+<body>
+ 
+    <!-- Navigation Bar -->
+     <div class="nav_bar w-full h-[80px] flex justify-between items-center px-[20px] border-b-2 border-gray-500">
+        <div class="nav_left w-[200px] md:w-auto h-[100%] flex justify-start md:justify-center items-center">
+            <img src="./photo/logo.svg" class="hover:cursor-pointer" alt="">
+        </div>
+        <div class="nav_right w-auto h-[100%] hidden md:flex justify-center items-center gap-[40px] font-bold">
+            <div class="hover:cursor-pointer">Home</div>
+            <div class="hover:cursor-pointer">About</div>
+            <div class="hover:cursor-pointer">Company</div>
+            <div class="hover:cursor-pointer">Pages</div>
+            <div class="hover:cursor-pointer">Blog</div>
+            <div class="hover:cursor-pointer">Shop</div>
+            <div class="hover:cursor-pointer">Get Started</div>                                        
+        </div>
+
+        <div class="w-[150px] h-[100%] flex justify-end md:hidden items-center text-3xl">
+            <i class="ri-menu-line"></i>
+        </div>
+     </div>
+    
+    <!-- Side_navbar -->
+     <div class="side_nav w-full h-auto flex justify-center items-center flex-col">
+
+        <div class="w-full h-auto py-[15px] flex justify-center items-center border-b-2 hover:bg-black hover:text-white border-gray-500 text-xl font-semibold">Home</div>
+        <div class="w-full h-auto py-[15px] flex justify-center items-center border-b-2 hover:bg-black hover:text-white border-gray-500 text-xl font-semibold">About</div>
+        <div class="w-full h-auto py-[15px] flex justify-center items-center border-b-2 hover:bg-black hover:text-white border-gray-500 text-xl font-semibold">Company</div>
+        <div class="w-full h-auto py-[15px] flex justify-center items-center border-b-2 hover:bg-black hover:text-white border-gray-500 text-xl font-semibold">Pages</div>
+        <div class="w-full h-auto py-[15px] flex justify-center items-center border-b-2 hover:bg-black hover:text-white border-gray-500 text-xl font-semibold">Blog</div>
+        <div class="w-full h-auto py-[15px] flex justify-center items-center border-b-2 hover:bg-black hover:text-white border-gray-500 text-xl font-semibold">Shop</div>
+        <div class="w-full h-auto py-[15px] flex justify-center items-center border-b-2 hover:bg-black hover:text-white border-gray-500 text-xl font-semibold">Get Started</div>   
+
+     </div>
+    <!-- Side_navbar -->
+
+
+     <!-- Navigation Bar -->
+
+
+    <!-- Hero Section  -->
+    <div class="w-full h-[100vh] sm:h-[50vh] md:h-[50vh] lg:h-[90vh] flex flex-col sm:flex-row">
+        <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%]  flex justify-center items-center  order-3 sm:order-2">
+           <div class="w-[100%] h-[100%] lg:w-[90%] lg:h-[90%] flex flex-col justify-center items-center space-y-3 sm:space-y-3 md:space-y-4 lg:space-y-4">
+             <div class="text-2xl sm:text-xl md:text-2xl text-[#98A2B3] font-semibold">Exclusive Smart Watch</div>
+             <div class="text-3xl sm:text-3xl   lg:text-4xl md:text-center pl-[10px] sm:pl-[10px] font-bold text-[#101828]">Let go of the Challenge <span class="hidden lg:inline"><br></span>See yourself better</div>
+             <div class="text-[#475467] text-center md:pl-[10px] lg:pl-[30px] md:text-xl">Connect your conversations with the tools and services that you use to get the job done. With over 1,500 apps and a robust API</div>
+
+             <div class="btns w-full flex justify-center items-center gap-[0px_30px]">
+                <div class="btn1 w-[130px] h-[40px] text-white bg-[#101828] rounded-[10px] flex justify-center items-center hover:cursor-pointer hover:bg-transparent hover:text-black hover:border-2 hover:border-black">Get Started&nbsp;<i class="ri-arrow-right-line"></i></div>
+                <div class="btn2 w-[130px] h-[40px] border-2 border-[#101828] rounded-[10px] flex justify-center items-center hover:cursor-pointer hoveR:">How it works&nbsp;<i class="ri-arrow-right-line"></i></div>
+             </div>
+
+             <div class="icons hidden lg:flex justify-center items-center gap-[0px_30px]">
+                <div class="icon1 flex justify-center items-center gap-[0px_10px]">
+                    <div class=""><img src="./photo/i1.svg" alt=""></div>
+                    <div class="">
+                        <div class="text-2xl font-bold">+12k</div>
+                        <div class="text-xl">Projects done</div>
+                    </div>
+                </div>
+                <div class="icon1 flex justify-center items-center gap-[0px_10px]">
+                    <div class=""><img src="./photo/i2.svg" alt=""></div>
+                    <div class="">
+                        <div class="text-2xl font-bold">68k</div>
+                        <div class="text-xl">Custommers</div>
+                    </div>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%] flex justify-center items-center order-2 sm:order-3">
+          <img src="./photo/hero.svg" class="w-[90%] h-[90%] sm:w-[100%] sm:h-[100%] object-contain" alt="">
+        </div>
+      </div>
+    <!-- Hero Section  -->
+
+    <!-- Section 2 -->
+     <div class="w-full h-auto flex justify-center items-center gap-[30px_50px] flex-wrap my-[15px]">
+        <div class="w-[320px] h-[100px]  flex justify-center items-center border-2 border-gray-500 rounded-[10px]">
+            <div class="w-[100px] h-[100px]  flex justify-center items-center"><img src="./photo/c1.svg" alt=""></div>
+            <div class="w-[220px] h-[100px]  flex justify-center items-center flex-col pl-[5px] space-y-1">
+                  <div class="content font-semibold">
+                    4K TV Game Mini Arcade Rocker Console 32GB/64GB
+                  </div>
+                  <div class="price text-gray-500 text-left w-full">
+                    $29.80
+                  </div>
+            </div>
+        </div>
+        <div class="w-[320px] h-[100px]  flex justify-center items-center border-2 border-gray-500 rounded-[10px]">
+            <div class="w-[100px] h-[100px]  flex justify-center items-center"><img src="./photo/c2.svg" alt=""></div>
+            <div class="w-[220px] h-[100px]  flex justify-center items-center flex-col pl-[5px] space-y-1">
+                  <div class="content font-semibold">
+                    Cancelling Headset Music Sport Deep Bass
+                </div>
+                  <div class="price text-gray-500 text-left w-full">
+                    $420.00
+                </div>
+            </div>
+        </div>
+        <div class="w-[320px] h-[100px]  flex justify-center items-center border-2 border-gray-500 rounded-[10px]">
+            <div class="w-[100px] h-[100px]  flex justify-center items-center"><img src="./photo/c3.svg" alt=""></div>
+            <div class="w-[220px] h-[100px]  flex justify-center items-center flex-col pl-[5px] space-y-1">
+                  <div class="content font-semibold">
+                    4K TV Game Mini Arcade Rocker Console 32GB/64GB
+                </div>
+                  <div class="price text-gray-500 text-left w-full">
+                    $96.50
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Section 2 -->
+
+    <!-- Section 3 -->
+     <div class="w-full h-auto py-[20px] flex justify-center items-center">
+        <div class="text-4xl md:text-4xl font-bold text-[#101828] text-center">Featured Products For Pre-Order</div>
+     </div>
+    <!-- Section 3 -->
+
+    <!-- Section 4 -->
+     <div class="w-[100%] lg:w-[90%] m-auto h-auto flex justify-center items-center flex-wrap my-[30px]  gap-[30px_40px]">
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca1.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Sony</div>
+                <div class="font-semibold">4K TV Game Mini Arcade Rocker Console 32GB/64GB</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-half-fill"></i> -->
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$29.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca2.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Google</div>
+                <div class="font-semibold">Cancelling Headset Music Sport Deep Bass</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <!-- <i class="ri-star-fill text-gray-500"></i> -->
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$39.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/c3.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Apple</div>
+                <div class="font-semibold">T500BT Original Wireless Bluetooth Headphone</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-fill"></i> -->
+                    <!-- <i class="ri-star-half-fill"></i> -->
+                    <i class="ri-star-fill text-gray-500"></i>
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$69.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca4.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Toshiba</div>
+                <div class="font-semibold">Black Walnut Wood & Aluminum Headphone Stand</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <i class="r i-star-fill text-gray-500"></i>
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$70.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca5.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">BassX</div>
+                <div class="font-semibold">Beats Studio3 Wireless Bluetooth Headphones</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-half-fill"></i> -->
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$29.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca6.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Konika</div>
+                <div class="font-semibold">Marshall MAJOR III Wireless Folding Bluetooth</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$39.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca7.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Apple</div>
+                <div class="font-semibold">T500BT Original Wireless Bluetooth Headphone</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-half-fill"></i> -->
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$69.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca8.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Toshiba</div>
+                <div class="font-semibold">Black Walnut Wood & Aluminum Headphone Stand</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-fill"></i> -->
+                    <!-- <i class="ri-star-half-fill"></i> -->
+                    <i class="ri-star-fill text-gray-500"></i>
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$70.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca9.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">BassX</div>
+                <div class="font-semibold">Beats Studio3 Wireless Bluetooth Headphones</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-fill"></i> -->
+                    <i class="ri-star-half-fill"></i>
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$29.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca10.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Konika</div>
+                <div class="font-semibold">Marshall MAJOR III Wireless Folding Bluetooth</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-half-fill"></i> -->
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$39.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca11.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Apple</div>
+                <div class="font-semibold">T500BT Original Wireless Bluetooth Headphone</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-fill"></i> -->
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <!-- <i class="ri-star-fill text-gray-500"></i> -->
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$69.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[250px] h-[320px] border-2 border-gray-600 rounded-[10px]">
+            <div class="w-[100%] h-[160px]  flex justify-center items-center"><img src="./photo/ca12.svg" class="w-[100%] h-[95%] object-contain" alt=""></div>
+            <div class="w-[100%] h-[160px] flex justify-center items-start flex-col px-[5px] space-y-1">
+                <div class="text-[#576071]">Toshiba</div>
+                <div class="font-semibold">Black Walnut Wood & Aluminum Headphone Stand</div>
+                <div class="text-orange-400">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <!-- <i class="ri-star-half-fill"></i> -->
+                    <i class="ri-star-fill text-gray-500"></i>
+                </div>
+                <div class="w-full flex justify-between px-[5px]">
+                    <div class="text-[#006D77]">$70.80</div>
+                    <div class="text-[#006D77] bg-[#BEE1E6] rounded-[5px] px-[10px]">Add  +</div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Section 4 -->
+
+    <!-- Section 5 -->
+    <div class="w-full h-auto py-[20px] flex justify-center items-center flex-col space-y-2">
+        <div class="text-4xl md:text-4xl font-bold text-[#101828] text-center">Explore by Categories.</div>
+        <div class="text-[#475467] px-[20px] font-semibold text-center">We provide many categories, choose a category according to your expertise to make it easier to find a job.</div>
+
+     </div>
+    <!-- Section 5 -->
+
+    <!-- Section 6 -->
+     <div class="w-full  h-auto  my-[10px] flex justify-center items-center flex-wrap gap-[30px]">
+        <div class="w-[340px] h-[430px]  flex justify-center items-center flex-col gap-[20px] border-2 border-gray-500 rounded-[10px]">
+            <div class="w-[100%] h-[80px]  flex justify-center items-center">
+                <div class="text-3xl text-[#323A4B] font-bold">Popular Categories</div>
+            </div>
+            <div class="w-[100%] h-[55px]  flex justify-between px-[15px] items-center pb-[20px] border-b-2 border-b-gray-400">
+                <div class="text-[#667085] text-xl">Computer - Laptop</div>
+                <div class="text-[#006D77] text-xl bg-[#c5cfe1] p-[2px_5px] rounded-[50px] flex justify-center items-center">10</div>
+            </div>
+            <div class="w-[100%] h-[55px]  flex justify-between px-[15px] items-center pb-[20px] border-b-2 border-b-gray-400">
+                <div class="text-[#667085] text-xl">Smart phone & Tablets</div>
+                <div class="text-[#006D77] text-xl bg-[#c5cfe1] p-[2px_5px] rounded-[50px] flex justify-center items-center">12</div>
+            </div>
+            <div class="w-[100%] h-[55px]  flex justify-between px-[15px] items-center pb-[20px] border-b-2 border-b-gray-400">
+                <div class="text-[#667085] text-xl">Fashion & Accessories</div>
+                <div class="text-[#006D77] text-xl bg-[#c5cfe1] p-[2px_5px] rounded-[50px] flex justify-center items-center">14</div>
+            </div>
+            <div class="w-[100%] h-[55px]  flex justify-between px-[15px] items-center pb-[20px] border-b-2 border-b-gray-400">
+                <div class="text-[#667085] text-xl">Halth & Beauty</div>
+                <div class="text-[#006D77] text-xl bg-[#c5cfe1] p-[2px_10px] rounded-[50px] flex justify-center items-center">8</div>
+            </div>
+        </div>
+        <div class="w-[340px] h-[430px] flex justify-center items-center gap-[15px] flex-wrap">
+               
+                 <div class="w-[95%] h-[80px] border-2 border-gray-400 rounded-[10px] flex">
+                    <div class="icon w-[80px] h-[100%]  flex justify-center  items-center"><img src="./photo/g1.svg" alt=""></div>
+                    <div class="content w-[260px] h-[100%] flex justify-center items-center text-[18px] text-[#323A4B]">
+                        Computer for Designer, Art
+                    </div>
+                 </div>
+                 <div class="w-[95%] h-[80px] border-2 border-gray-400 rounded-[10px] flex">
+                    <div class="icon w-[80px] h-[100%]  flex justify-center  items-center"><img src="./photo/g2.svg" alt=""></div>
+                    <div class="content w-[260px] h-[100%] flex justify-center items-center text-[18px] text-[#323A4B]">
+                        Software, card, book
+                    </div>
+                 </div>
+                 <div class="w-[95%] h-[80px] border-2 border-gray-400 rounded-[10px] flex">
+                    <div class="icon w-[80px] h-[100%]  flex justify-center  items-center"><img src="./photo/g3.svg" class="w-[50px] h-[50px]" alt=""></div>
+                    <div class="content w-[260px] h-[100%] flex justify-center items-center text-[18px] text-[#323A4B]">
+                        Explore More
+                    </div>
+                 </div>
+                 <div class="w-[95%] h-[80px] border-2 border-gray-400 rounded-[10px] flex">
+                    <div class="icon w-[80px] h-[100%]  flex justify-center  items-center"><img src="./photo/g4.svg" alt=""></div>
+                    <div class="content w-[260px] h-[100%] flex justify-center items-center text-[18px] text-[#323A4B]">
+                        Laptop for office, students
+                </div>
+                 </div>
+        </div>
+     </div>
+    <!-- Section 6 -->
+
+    <!-- Section 7 -->
+    <div class="w-full h-auto py-[20px] flex justify-center items-center">
+        <div class="text-xl md:text-2xl px-[20px] py-[5px] rounded-[20px] text-center text-[#E29578] bg-[#dbb79c]">How It Work ?</div>
+     </div>
+    <!-- Section 7 -->
+
+    <!-- Section 8 -->
+    <div class="w-full h-auto py-[10px] pb-[10px] flex justify-center items-center">
+        <div class="text-4xl md:text-4xl font-bold text-[#101828] text-center">Cross-border ordering has
+            never been easier</div>
+     </div>    
+     <!-- Section 8 -->
+
+     <!-- Section 9 -->
+      <div class="main_container w-full h-auto flex justify-center items-center gap-[30px] flex-wrap py-[15px] my-[10px]">
+
+        <div class="card_1 w-[220px] h-[230px] bg-[#D1ECFD]">
+            <div class="img1 w-full h-[120px]  flex justify-center items-end"><img src="./photo/w1.svg" alt=""></div>
+            <div class="content_1 w-full h-[110px] flex justify-center items-center flex-col space-y-2">
+                <div class="text-3xl font-bold text-[#1E2534]">Start Plan</div>
+                <div class="text-center px-[5px] text-[#667085]">Choose any of our packages</div>
+            </div>
+        </div>
+        <div class="card_1 w-[220px] h-[230px] bg-[#FDE2E4]">
+            <div class="img1 w-full h-[120px]  flex justify-center items-end"><img src="./photo/w2.svg" alt=""></div>
+            <div class="content_1 w-full h-[110px] flex justify-center items-center flex-col space-y-2">
+                <div class="text-3xl font-bold text-[#1E2534]">Connect</div>
+                <div class="text-center px-[5px] text-[#667085]">Receive concepts In 24 hours</div>
+            </div>
+        </div>
+        <div class="card_1 w-[220px] h-[230px] bg-[#DBECE5]">
+            <div class="img1 w-full h-[120px]  flex justify-center items-end"><img src="./photo/w3.svg" alt=""></div>
+            <div class="content_1 w-full h-[110px] flex justify-center items-center flex-col space-y-2">
+                <div class="text-3xl font-bold text-[#1E2534]">Match</div>
+                <div class="text-center px-[5px] text-[#667085]">Development Stage</div>
+            </div>
+        </div>
+        <div class="card_1 w-[220px] h-[230px] bg-[#D1ECFD]">
+            <div class="img1 w-full h-[120px]  flex justify-center items-end"><img src="./photo/w4.svg" alt=""></div>
+            <div class="content_1 w-full h-[110px] flex justify-center items-center flex-col space-y-2">
+                <div class="text-3xl font-bold text-[#1E2534]">Complete</div>
+                <div class="text-center px-[5px] text-[#667085]">After-release Support</div>
+            </div>
+        </div>
+        <div class="card_1 w-[220px] h-[230px] bg-[#DBECE5]">
+            <div class="img1 w-full h-[120px]  flex justify-center items-end"><img src="./photo/w4.svg" alt=""></div>
+            <div class="content_1 w-full h-[110px] flex justify-center items-center flex-col space-y-2">
+                <div class="text-3xl font-bold text-[#1E2534]">Review</div>
+                <div class="text-center px-[5px] text-[#667085]">Project launch and checkout</div>
+            </div>
+        </div>
+      
+      </div>
+     <!-- Section 9 -->
+
+     <!-- Section 10 -->
+
+     <div class="w-full h-auto my-[20px] flex justify-center items-center gap-[30px] flex-wrap">
+        <div class="w-auto px-[20px] bg-[#006D77] h-auto flex justify-center items-center gap-[30px] flex-wrap rounded-[50px]">
+
+            <div class="w-[340px] h-[350px]  flex justify-center items-center px-[5px] flex-col space-y-4">
+                <div class="text-white font-bold text-4xl text-center">Subscribe our newsletter</div>
+                <div class="text-xl text-white text-center">By clicking the button, you are agreeing with our Term & Conditions</div>
+                <div class="w-[90%] h-[55px] bg-white flex justify-between px-[10px] items-center gap-[10px] rounded-[50px]">
+                    <div class="w-[70%] h-[100%]"><input type="text" placeholder="Enter you mail..." class="outline-none border-none pl-[10px] w-[100%] h-[100%] rounded-[50px]"></div>
+                    <div class="text-2xl p-[6px_11px] rounded-[50px] bg-[#006D77]"><i class="ri-arrow-right-line"></i></div>
+                </div> 
+            </div>
+            <div class="w-[340px] h-[350px] flex justify-center items-center">
+                <img src="./photo/Untitled.svg" alt="" class="">
+            </div>
+        </div>
+    </div>
+
+     <!-- Section 10 -->
+
+
+
+     <!-- Section 11 -->
+      <div class="w-full h-auto flex py-[15px] my-[10px] justify-between items-center px-[20px] flex-wrap gap-[20px_50px]">
+        <div class="img_logo w-full  md:w-[100px] flex justify-center md:justify-start   items-center">
+            <img src="./photo/logo.svg" alt="" class="">
+        </div>
+
+        <div class="content_2 flex justify-center items-center gap-[15px_10px] flex-wrap w-full md:w-auto">
+            <div class="text-xl">Ready to get started?</div>
+            <div class="text-xl bg-black text-white px-[20px] rounded-[50px] py-[7px]">Create an Account <i class="ri-arrow-right-line"></i></div>
+        </div>
+      </div>
+     <!-- Section 11 -->
+
+     <div class="w-full h-[1px] border-[1px] border-gray-500"></div>
+
+
+     <!-- Section 12 -->
+      <div class="foot w-full h-auto  py-[10px] flex justify-center items-center flex-wrap gap-[30px]">
+
+        <div class="w-[250px] h-auto py-[5px]  flex justify-center items-center flex-col space-y-2">
+            <div class="text-2xl  text-[#101828] font-bold">Contact</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">4517 Washington Ave.Manchester, Kentucky 39495</div>
+            <div class="text-xl text-[#969696] hover:text-black">(239) 555-0108</div>
+            <div class="text-xl text-blue-500 ">contact@agon.com</div>
+            <div class="flex justify-center items-center text-xl gap-[10px]">
+                <div class=""><i class="ri-facebook-fill"></i></div>
+                <div class=""><i class="ri-instagram-line"></i></div>
+                <div class=""><i class="ri-twitter-fill"></i></div>
+                <div class=""><i class="ri-linkedin-fill"></i></div>
+            </div>
+        </div>
+
+        <div class="w-[250px] h-auto py-[5px]  flex justify-center items-center flex-col space-y-2">
+            <div class="text-2xl  text-[#101828] font-bold">About Us</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">About V1</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">About V2</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">About V3</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Services V1</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Services V2</div>
+        </div>
+
+        <div class="w-[250px] h-auto py-[5px]  flex justify-center items-center flex-col space-y-2">
+            <div class="text-2xl  text-[#101828] font-bold">Discover</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Our Blog</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Our Blog V1</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Our Blog V2</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Blog Single</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Page 404</div>
+        </div>
+
+        <div class="w-[250px] h-auto py-[5px]  flex justify-center items-center flex-col space-y-2">
+            <div class="text-2xl  text-[#101828] font-bold">Support</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">FAQs</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">FAQ V2</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Career</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Career Detail</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Contact Us</div>
+        </div>
+      
+        <div class="w-[250px] h-auto py-[5px]  flex justify-center items-center flex-col space-y-2">
+            <div class="text-2xl  text-[#101828] font-bold">Useful links</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Shop</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Shop V2</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Shop V2</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Shop V2</div>
+            <div class="text-xl text-[#969696] text-center hover:text-black">Terms & Conditions</div>
+        </div>
+
+      </div>
+     <!-- Section 12 -->
+
+     <div class="w-full h-[1px] border-[1px] my-[15px] border-gray-500"></div>
+
+     <!-- Section 13 -->
+      <div class="w-full h-auto py-[10px] my-[10px]  flex  gap-[10px_0px] justify-between items-center px-[30px] flex-wrap">
+        <div class="md:w-[200px] w-full flex justify-center md:justify-start items-center text-xl text-[#969696] hover:text-black">©Agon Official 2022</div>
+        <div class="md:w-[300px] w-full flex justify-center md:justify-start items-center text-xl text-[#969696] text-center hover:text-black">Privacy policy Cookies Terms of service</div>
+      </div>
+     <!-- Section 13 -->
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+
+        $(".side_nav").hide();
+
+        $(".ri-menu-line").click(function(){
+            $(".side_nav").slideToggle(700);
+        })
+
+    })
+</script>
+</html>
